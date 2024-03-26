@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam groupInheritance 2
+
+class Client
+abstract class Subject {
+	+visit()
+}
+Subject <.. Client
+
+class RealSubject {
+	+visit()
+}
+class ProxySubject {
+	-mSubject : RealSubject
+	+visit()
+}
+Subject <|-- RealSubject
+Subject <|-- ProxySubject
+RealSubject <-- ProxySubject
+@enduml

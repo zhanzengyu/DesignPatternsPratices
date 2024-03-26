@@ -1,3 +1,3 @@
-# 设计模式示例仓库
+# Proxy Pattern
 
-包括示例代码，UML 类图等
+![](./src/plantuml/proxy_pattern.png)

@@ -1,3 +1,5 @@
+package template;
+
 public class ProxySubject extends Subject {
     // 持有真实主题的引用
     private RealSubject mSubject;

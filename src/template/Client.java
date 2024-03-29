@@ -1,3 +1,5 @@
+package template;
+
 public class Client {
     public static void main(String[] args) {
         // 构造一个真实主题对象

@@ -1,5 +1,5 @@
-# 设计模式示例仓库
+# Decorator Pattern(Wrapper Pattern)
 
-包括示例代码，UML 类图等
+![](./plantuml/decorator_pattern.png)
 
-[1. 代理模式](https://github.com/zhanzengyu/DesignPatternsPratices/tree/proxy_pattern)
+[模版代码示例](https://github.com/zhanzengyu/DesignPatternsPratices/tree/decorator_pattern/src/template)

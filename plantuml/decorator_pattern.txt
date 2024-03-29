@@ -1,0 +1,32 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+abstract class Component {
+	+ operate(): void
+}
+class ConcreteComponent {
+	+ operate(): void	
+}
+abstract class Decorator {
+	- component: Component
+	+ Decorator(Component)
+	+ operate(): void
+}
+class ConcreteDecoratorA {
+	+ ConcreteDecoratorA(Component)
+	+ operate(): void
+	+ operateA(): void
+	+ operateB(): void
+}
+class ConcreteDecoratorB {
+	+ ConcreteDecoratorB(Component)
+	+ operate(): void
+	+ operateA(): void
+	+ operateB(): void
+}
+Decorator o--> Component
+Component <|-- ConcreteComponent
+Component <|-- Decorator
+Decorator <|-- ConcreteDecoratorA
+Decorator <|-- ConcreteDecoratorB
+@enduml
